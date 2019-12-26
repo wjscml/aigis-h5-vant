@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>aigis-h5-vant</title>
+    <title>Aigis-埃癸斯风险控制系统</title>
   </head>
   <body>
     <noscript>
@@ -13,5 +13,13 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <div class="ajax-loading" id="ajaxLoading" style="display: none;">
+      <div class="overlay"></div>
+      <div class="loading">
+        <img src="<%= BASE_URL %>assets/eclipse.gif" alt="">
+        <span>加载中...</span>
+      </div>
+    </div>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
   </body>
 </html>

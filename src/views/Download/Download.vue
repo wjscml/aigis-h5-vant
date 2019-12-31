@@ -56,12 +56,10 @@ export default {
       if (isIOS) {
         window.location.href = 'http://itunes.apple.com/cn/app/id1475231419?mt=8' // 跳AppStore下载地址
       }
-
       // 是微信内部webView
-      if (this.isWeixn) {
+      if (this.isWeiXn) {
         alert('请点击右上角按钮, 点击使用浏览器打开')
       }
-
       // 是PC端
       if (this.isPC) {
         this.$router.push('/')

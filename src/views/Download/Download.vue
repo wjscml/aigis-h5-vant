@@ -48,14 +48,12 @@ export default {
       // var app = navigator.appVersion
       var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1
       var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
-      console.log(isAndroid, isIOS, this.isWeixn, this.isPC)
       // 这里是安卓浏览器
       if (isAndroid) {
         window.location.href = 'https://h5aigis.leadfintech.com/release/aigis-release.apk' // 跳安卓端下载地址
       }
       // 这里是iOS浏览器
       if (isIOS) {
-        console.log('resss')
         window.location.href = 'http://itunes.apple.com/cn/app/id1475231419?mt=8' // 跳AppStore下载地址
       }
 
